@@ -1,0 +1,49 @@
+Retail Sales & Profitability Analysis Dashboard (Tableau)
+Project Overview
+This project features an interactive Tableau dashboard designed for a retail clothing store network operating in Ukraine (Lutsk, Rivne, and Ternopil). The analysis transforms raw retail transaction data into actionable business strategies, focusing on profitability optimization, inventory planning, and markdown control.
+
+The visual design utilizes a minimalist, premium corporate color palette: a deep emerald green strictly reserved to highlight top-performing zones and clear leadership, contrasted with a grounded warm taupe/brown for baseline metrics to minimize cognitive overload.
+
+1. Business Challenges & Objectives
+The business owner required a data-driven solution to address the following operational questions:
+
+Market Leadership & Seasonality: Which store consistently leads in profit, and what does the network's overall seasonality look like to better plan purchasing budgets?
+
+Localized Assortment Performance: Which product sub-categories act as "locomotives" in each specific city, and where does the inventory fail to match local demand?
+
+Markdown Leakage: Where is the business losing profit margins due to uncoordinated or excessive ("blind") discounts?
+
+2. Key Dashboard Features & Visualization Choices
+Executive Summary (BANs): High-level KPI blocks displaying Net Profit, Profit Margin %, Top Store Contribution, and Estimated Revenue Leakage due to discounts.
+
+Dual-Perspective Trend Analysis: Combines a Bump Chart to track stable city rankings over time alongside a Revenue Line Chart to capture the network's financial peaks and seasonal valleys.
+
+Localized Assortment Matrix: A tailored Highlight Table using customized table calculations to dynamically highlight the Top 1 sub-category within each specific city independently.
+
+Discount Strategy Detector: A horizontal bar chart utilizing a partitioned table calculation (Pane (down)) to isolate and surface the single most critical markdown leak within every major product category.
+
+3. Data Insights & Strategic Recommendations
+ Seasonal Inventory Planning
+Insight: The network experiences a universal seasonal trend across all locations, peaking sharply in October (~86.75K) and hitting its deepest operational trough in January (~45.80K).
+
+Recommendation: Restructure the cash-flow and procurement calendar. Allocate maximum purchasing capital ahead of the autumn launch (September–October). Completely freeze large inventory orders by December to avoid overstocking and cash shortages in January.
+
+ Hyper-Local Assortment Optimization
+Insight: Lutsk generates over 55% of the network's profit, driven heavily by Women's Shirts & Blouses, while children's items underperform. Conversely, Ternopil shows an anomalously strong performance in Boys' Knitwear, outperforming several adult sub-categories locally.
+
+Recommendation: Diversify inventory by location. Reduce floor space for children's clothes in Lutsk to expand the premium women's line. Increase procurement volume for kids' apparel in Ternopil and prioritize it in local marketing campaigns.
+
+ Markdown Discipline
+Insight: The highest amount of profit margin is burned on markdowns within the Women's and Men's Outerwear categories (accumulating nearly 12,000 UAH in losses). High-ticket items are being heavily discounted, destroying potential baseline profit.
+
+Recommendation: Eliminate ad-hoc, manual discounts on outerwear during peak seasonal months. Replace direct price cuts with a loyalty loop (e.g., cashback points toward the next purchase) to safeguard immediate profit margins.
+
+Technical Stack & Tools Used
+BI Platform: Tableau Desktop / Tableau Public
+
+Advanced Tableau Features: Table Calculations (RANK, WINDOW_MAX), Dual Axis Charts, Custom Diverging Color Palettes, Tooltip Visualizations, Pane (down) partitioning.
+
+Language/Context: Ukrainian Retail Dataset (March 2025 – May 2026).
+
+🔗 How to View the Interactive Dashboard
+https://public.tableau.com/views/_17837708208400/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
